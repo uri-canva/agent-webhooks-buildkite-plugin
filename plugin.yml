@@ -1,0 +1,14 @@
+name: Agent Webhooks
+description: Adds webhooks to the agent
+author: https://github.com/uri-canva
+requirements:
+  - curl
+public: true
+configuration:
+  properties:
+    endpoint:
+      type: string
+    headers:
+      type: list
+  required:
+    - endpoint

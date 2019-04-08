@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -eu
+
+main() {
+  local script_dir
+  script_dir=$(dirname "$0")
+  "${script_dir}/post_event.sh" post-checkout
+}
+
+main "$@"
